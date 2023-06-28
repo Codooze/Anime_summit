@@ -110,73 +110,92 @@ const App = () => {
       </section>
 
       {/* <!-- ------------------- Feature Authors------------------- --> */}
-      <div>
+      <section id="feature_container">
         <h2>Feature Authors</h2>
         <ul>
           <li>
-            <h3>Koyoharu Gotouge</h3>
-            <p>Gotouge wrote and illustrated the manga series</p>
-            <p>
-              Gotouge's "Demon Slayer" has become a cultural phenomenon, with
-              millions of copies sold worldwide.
-            </p>
+            <img src={GHOST} alt="" />
+            <div className="authors_description_container">
+              <h3>Koyoharu Gotouge</h3>
+              <p>Gotouge wrote and illustrated the manga series</p>
+              <p>
+                Gotouge's "Demon Slayer" has become a cultural phenomenon, with
+                millions of copies sold worldwide.
+              </p>
+            </div>
           </li>
           <li>
-            <h3>Boichi & Riichiro</h3>
-            <p>
-              Boichi is a South Korean illustrator and manga artist, Riichiro
-              wrote Doctor Stone
-            </p>
-            <p>
-              Boichi's art style is known for its highly detailed and realistic
-              depictions, while Riichiro's writing is praised for its scientific
-              accuracy and creativity.
-            </p>
+            <img src={GHOST} alt="" />
+            <div className="authors_description_container">
+              <h3>Boichi & Riichiro</h3>
+              <p>
+                Boichi is a South Korean illustrator and manga artist, Riichiro
+                wrote Doctor Stone
+              </p>
+              <p>
+                Boichi's art style is known for its highly detailed and
+                realistic depictions, while Riichiro's writing is praised for
+                its scientific accuracy and creativity.
+              </p>
+            </div>
           </li>
           <li>
-            <h3>Yoshiyuki Tomino</h3>
-            <p>
-              Tomino is known for his influential work on the "Gundam" franchise
-            </p>
-            <p>
-              Tomino's "Mobile Suit Gundam" is widely regarded as a
-              groundbreaking work that revolutionized the mecha genre.
-            </p>
+            <img src={GHOST} alt="" />
+            <div className="authors_description_container">
+              <h3>Yoshiyuki Tomino</h3>
+              <p>
+                Tomino is known for his influential work on the "Gundam"
+                franchise
+              </p>
+              <p>
+                Tomino's "Mobile Suit Gundam" is widely regarded as a
+                groundbreaking work that revolutionized the mecha genre.
+              </p>
+            </div>
           </li>
           <li>
-            <h3>Rumiko Takahashi</h3>
-            <p>
-              Takahashi is a highly successful manga artist, known for creating
-              series like "Inuyasha" and "Ranma ½"
-            </p>
-            <p>
-              Takahashi's works are known for their unique blend of humor,
-              romance, and action, and have inspired countless other manga and
-              anime creators.
-            </p>
+            <img src={GHOST} alt="" />
+            <div className="authors_description_container">
+              <h3>Rumiko Takahashi</h3>
+              <p>
+                Takahashi is a highly successful manga artist, known for
+                creating series like "Inuyasha" and "Ranma ½"
+              </p>
+              <p>
+                Takahashi's works are known for their unique blend of humor,
+                romance, and action, and have inspired countless other manga and
+                anime creators.
+              </p>
+            </div>
           </li>
           <li>
-            <h3>Hideaki Anno</h3>
-            <p>
-              Anno is the creator of the critically acclaimed series "Neon
-              Genesis Evangelion"
-            </p>
-            <p>
-              Anno's "Neon Genesis Evangelion" is known for its complex
-              characters, psychological themes, and innovative animation
-              techniques.
-            </p>
+            <img src={GHOST} alt="" />
+            <div className="authors_description_container">
+              <h3>Hideaki Anno</h3>
+              <p>
+                Anno is the creator of the critically acclaimed series "Neon
+                Genesis Evangelion"
+              </p>
+              <p>
+                Anno's "Neon Genesis Evangelion" is known for its complex
+                characters, psychological themes, and innovative animation
+                techniques.
+              </p>
+            </div>
           </li>
           <li>
-            <h3>Tsugumi Ohba</h3>
-            <p>Ohba is the pen name of the author of "Death Note"</p>
-            <p>
-              Ohba's "Death Note" is a suspenseful and thought-provoking
-              thriller that explores the nature of justice and power.
-            </p>
+            <img src={GHOST} alt="" />
+            <div className="authors_description_container">
+              <h3>Tsugumi Ohba</h3>
+              <p>Ohba is the pen name of the author of "Death Note"</p>
+              <p>
+                Ohba's "Death Note" is a suspenseful and thought-provoking
+                thriller that explores the nature of justice and power.
+              </p>
+            </div>
           </li>
         </ul>
-      </div>
+      </section>
     </>
   );
 };

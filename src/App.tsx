@@ -1,11 +1,18 @@
 import "./App.scss";
+import { useState } from "react";
 import GHOST from "./assets/ghost.png";
 import ANIME from "./assets/icons8-anime-64.png";
 import CAMERA from "./assets/icons8-camera-100.png";
 import SHARINGAN from "./assets/icons8-sharingan-100.png";
 import AUTOGRAPH from "./assets/icons8-autograph-100.png";
-
+import DOWN_ARROW from "./assets/arrow_down 1.svg";
 const App = () => {
+  const [showMore, setShowMore] = useState(false);
+
+  const handleShowMore = () => {
+    setShowMore(!showMore);
+  };
+
   return (
     <>
       <header>
@@ -112,7 +119,7 @@ const App = () => {
       {/* <!-- ------------------- Feature Authors------------------- --> */}
       <section id="feature_container">
         <h2>Feature Authors</h2>
-        <ul>
+        <ul className={`${showMore ? "show_all" : ""}`}>
           <li>
             <img src={GHOST} alt="" />
             <div className="authors_description_container">
@@ -195,6 +202,14 @@ const App = () => {
             </div>
           </li>
         </ul>
+        {!showMore && (
+          <div className="show_btn_container">
+            <button className="show_more_button" onClick={handleShowMore}>
+              <p>MORE</p>
+              <img src={DOWN_ARROW} alt="" />
+            </button>
+          </div>
+        )}
       </section>
     </>
   );

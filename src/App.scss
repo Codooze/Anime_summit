@@ -157,6 +157,15 @@ button {
     display: none;
 }
 
+$menu-desktop-width: 1440px;
+$menu-desktop-margin-right: 198px;
+
+.menu-desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 15%
+}
+
 #home_container {
     display: flex;
     padding: 109px 12px 71px;
@@ -399,6 +408,25 @@ button {
 }
 
 @media (min-width: 768px) {
+    $logo-desktop-margin-left: 209px;
+
+
+    .nav-container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 0.5fr 1fr;
+
+        .hamburger-lines {
+            display: none;
+        }
+
+        .logo {
+            position: relative;
+            justify-self: center;
+            inset: -2px;
+        }
+    }
+
     #home_container {
         margin-left: calc((100vw - 768px) / 6 + 10%);
         margin-right: calc((100vw - 768px) / 6 + 20%);
@@ -435,7 +463,6 @@ button {
             justify-content: center;
             flex-wrap: wrap;
             gap: 2.68px;
-
 
             li {
                 width: 200px;

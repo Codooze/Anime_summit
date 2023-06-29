@@ -1,5 +1,5 @@
 import "./App.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import GHOST from "./assets/ghost.png";
 import ANIME from "./assets/icons8-anime-64.png";
 import CAMERA from "./assets/icons8-camera-100.png";
@@ -8,6 +8,23 @@ import AUTOGRAPH from "./assets/icons8-autograph-100.png";
 import DOWN_ARROW from "./assets/arrow_down 1.svg";
 const App = () => {
   const [showMore, setShowMore] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 798);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const menuClass = isDesktop ? "menu-desktop" : "menu-items";
 
   const handleShowMore = () => {
     setShowMore(!showMore);
@@ -28,7 +45,7 @@ const App = () => {
               <div className="logo">
                 <h1>Navbar</h1>
               </div>
-              <div className="menu-items">
+              <div className={menuClass}>
                 <li>
                   <a href="#">About</a>
                 </li>

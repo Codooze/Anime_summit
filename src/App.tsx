@@ -49,20 +49,22 @@ const App = () => {
           </div>
         </nav>
       </header>
-      <section id="home_container">
-        <div id="description_container">
-          <h2>"Hello! Sharing Wold"</h2>
-          <h1>Anime lovers Global Summit 2024</h1>
-          <p id="description">
-            Welcome to the Anime lovers Global Summit 2024! This event is a
-            gathering of anime enthusiasts from around the world to celebrate
-            our shared love of anime. Join us for a weekend of panels,
-            screenings, cosplay, and more. We can't wait to see you there!
-          </p>
-        </div>
-        <div id="event_info_container">
-          <h2 id="event_day">2024.04.19(FRI) ~ 21(SUN)</h2>
-          <p>Tokyo Big Sight Tokyo, Japan</p>
+      <section>
+        <div id="home_container">
+          <div id="description_container">
+            <h2>"Hello! Sharing Wold"</h2>
+            <h1>Anime lovers Global Summit 2024</h1>
+            <p id="description">
+              Welcome to the Anime lovers Global Summit 2024! This event is a
+              gathering of anime enthusiasts from around the world to celebrate
+              our shared love of anime. Join us for a weekend of panels,
+              screenings, cosplay, and more. We can't wait to see you there!
+            </p>
+          </div>
+          <div id="event_info_container">
+            <h2 id="event_day">2024.04.19(FRI) ~ 21(SUN)</h2>
+            <p>Tokyo Big Sight Tokyo, Japan</p>
+          </div>
         </div>
       </section>
 

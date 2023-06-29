@@ -6,13 +6,20 @@ import CAMERA from "./assets/icons8-camera-100.png";
 import SHARINGAN from "./assets/icons8-sharingan-100.png";
 import AUTOGRAPH from "./assets/icons8-autograph-100.png";
 import DOWN_ARROW from "./assets/arrow_down 1.svg";
+import INUYASHA from "./assets/Authors/inuyasha.jpeg";
+import DEATH_NOTE from "./assets/Authors/Death note.jpeg";
+import INOSUKE from "./assets/Authors/inosuke.jpeg";
+import MADE_IN_ABYSS from "./assets/Authors/made in the abys.png";
+import DOCTOR_STONE from "./assets/Authors/senku.jpeg";
+import EVANGELION from "./assets/Authors/Shinji Ikari.jpeg";
+
 const App = () => {
   const [showMore, setShowMore] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 798);
+      setIsDesktop(window.innerWidth >= 768);
     };
 
     handleResize();
@@ -140,7 +147,7 @@ const App = () => {
         <h2>Feature Authors</h2>
         <ul className={`${showMore ? "show_all" : ""}`}>
           <li>
-            <img src={GHOST} alt="" />
+            <img src={INOSUKE} alt="" />
             <div className="authors_description_container">
               <h3>Koyoharu Gotouge</h3>
               <p>Gotouge wrote and illustrated the manga series</p>
@@ -151,7 +158,7 @@ const App = () => {
             </div>
           </li>
           <li>
-            <img src={GHOST} alt="" />
+            <img src={DOCTOR_STONE} alt="" />
             <div className="authors_description_container">
               <h3>Boichi & Riichiro</h3>
               <p>
@@ -166,21 +173,18 @@ const App = () => {
             </div>
           </li>
           <li>
-            <img src={GHOST} alt="" />
+            <img src={MADE_IN_ABYSS} alt="" />
             <div className="authors_description_container">
-              <h3>Yoshiyuki Tomino</h3>
+              <h3>Akihito Tsukushi</h3>
+              <p>Tsukushi is the creator of the manga series "Made in Abyss"</p>
               <p>
-                Tomino is known for his influential work on the "Gundam"
-                franchise
-              </p>
-              <p>
-                Tomino's "Mobile Suit Gundam" is widely regarded as a
-                groundbreaking work that revolutionized the mecha genre.
+                "Made in Abyss" is known for its stunning artwork, imaginative
+                world-building, and emotional storytelling.
               </p>
             </div>
           </li>
           <li>
-            <img src={GHOST} alt="" />
+            <img src={INUYASHA} alt="" />
             <div className="authors_description_container">
               <h3>Rumiko Takahashi</h3>
               <p>
@@ -195,7 +199,7 @@ const App = () => {
             </div>
           </li>
           <li>
-            <img src={GHOST} alt="" />
+            <img src={EVANGELION} alt="" />
             <div className="authors_description_container">
               <h3>Hideaki Anno</h3>
               <p>
@@ -210,7 +214,7 @@ const App = () => {
             </div>
           </li>
           <li>
-            <img src={GHOST} alt="" />
+            <img src={DEATH_NOTE} alt="" />
             <div className="authors_description_container">
               <h3>Tsugumi Ohba</h3>
               <p>Ohba is the pen name of the author of "Death Note"</p>

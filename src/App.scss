@@ -333,11 +333,13 @@ $menu-desktop-margin-right: 198px;
         display: grid;
         justify-content: center;
         padding: 0 8.5px;
+        gap: 15px;
 
         img {
-            width: 106px;
+            width: 116px;
             justify-self: center;
             align-self: center;
+            margin-right: 20px;
         }
 
         li {
@@ -487,6 +489,38 @@ $menu-desktop-margin-right: 198px;
                     font-weight: 700;
                     line-height: 25px;
                     letter-spacing: 0.72px;
+                }
+            }
+        }
+    }
+
+    #feature_container {
+        ul {
+            grid-template-columns: auto auto;
+
+            li {
+                .authors_description_container {
+                    width: 305px;
+
+                    h3 {
+                        font-size: 24px;
+                        font-weight: 700;
+                        letter-spacing: -0.48px;
+                    }
+
+                    p:first-of-type {
+                        font-size: 15px;
+                        font-weight: 700;
+                        line-height: 21px;
+                        letter-spacing: -1.35px;
+                    }
+
+                    p:nth-of-type(2) {
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        letter-spacing: -0.7px;
+                    }
                 }
             }
         }

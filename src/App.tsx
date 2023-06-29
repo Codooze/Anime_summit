@@ -145,7 +145,7 @@ const App = () => {
       {/* <!-- ------------------- Feature Authors------------------- --> */}
       <section id="feature_container">
         <h2>Feature Authors</h2>
-        <ul className={`${showMore ? "show_all" : ""}`}>
+        <ul className={`${showMore || isDesktop ? "show_all" : ""}`}>
           <li>
             <img src={INOSUKE} alt="" />
             <div className="authors_description_container">

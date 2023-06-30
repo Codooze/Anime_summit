@@ -50,7 +50,7 @@ const App = () => {
                 <span className="line line3"></span>
               </div>
               <div className="logo">
-                <h1>Navbar</h1>
+                <h1>Codooze</h1>
               </div>
               <div className={menuClass}>
                 <li>

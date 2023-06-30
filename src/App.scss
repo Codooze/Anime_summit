@@ -146,7 +146,7 @@ button {
 
 .logo {
     position: absolute;
-    top: 5px;
+    top: 13px;
     right: 15px;
     font-size: 1.2rem;
     color: #0e2431;
@@ -342,6 +342,8 @@ $menu-desktop-margin-right: 198px;
     .show_all li {
         display: grid;
         grid-template-columns: auto 1fr;
+        width: min(421px, 100%);
+        justify-self: center;
     }
 
     ul {
@@ -511,12 +513,12 @@ $menu-desktop-margin-right: 198px;
 
     #feature_container {
         ul {
-            grid-template-columns: auto auto;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
 
             li {
                 .authors_description_container {
-                    width: min(305px, 100%);
-
                     h3 {
                         font-size: 24px;
                         font-weight: 700;
